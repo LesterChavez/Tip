@@ -7,20 +7,20 @@
     tools:context="com.example.tysonlove.tip.MainActivity">
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:ems="10"
         android:inputType="none"
         android:text="Select tip amount"
+        app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintTop_toTopOf="parent"
-        android:layout_marginTop="16dp" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnFivePercent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="16dp"
@@ -29,7 +29,7 @@
         tools:layout_editor_absoluteY="174dp" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnTenPercent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="10%"
@@ -39,7 +39,7 @@
         tools:layout_editor_absoluteY="174dp" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btnFifteenPercent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="15%"
@@ -47,7 +47,7 @@
         tools:layout_editor_absoluteY="174dp" />
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/btnTwentyPercent"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="20%"
@@ -55,7 +55,7 @@
         tools:layout_editor_absoluteY="174dp" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txtSelectTip"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="89dp"
@@ -65,7 +65,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/txtViewBottom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="0.00"
