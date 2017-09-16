@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Tip</string>
+    <string name="five_percent">fivePercent</string>
+    <string name="ten_percent">tenPercent</string>
+    <string name="fifteen_percent">fifteenPercent</string>
+    <string name="twenty_percent">twentyPercent</string>
+
 </resources>

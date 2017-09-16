@@ -1,14 +1,14 @@
 package com.example.tysonlove.tip;
 
+import android.renderscript.Double2;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
-
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     Button btnFivePercent;
     Button btnTenPercent;
@@ -32,5 +32,41 @@ public class MainActivity extends AppCompatActivity  {
         editText = (EditText) findViewById(R.id.editText);
 
         finalAmount = 1.00;
+
+        btnFivePercent.setOnClickListener(this);
+        btnTenPercent.setOnClickListener(this);
+        btnFifteenPercent.setOnClickListener(this);
+        btnTwentyPercent.setOnClickListener(this);
+    }
+
+    @Override
+    public void onClick(View view) {
+        money = Double.parseDouble(editText.getText().toString());
+
+
+        if (view.getId() == btnFivePercent.getId()){
+            finalAmount = money * .05;
+            finalAmount = Math.round(finalAmount *100.0) / 100.0;
+            txtViewBottom.setText("$" + finalAmount.toString());
+        }
+
+        if (view.getId() == btnTenPercent.getId()){
+            finalAmount = money * .10;
+            finalAmount = Math.round(finalAmount *100.0) / 100.0;
+            txtViewBottom.setText("$" +finalAmount.toString());
+        }
+
+        if (view.getId() == btnFifteenPercent.getId()){
+            finalAmount = money * .15;
+            finalAmount = Math.round(finalAmount *100.0) / 100.0;
+            txtViewBottom.setText("$" + finalAmount.toString());
+        }
+
+        if (view.getId() == btnTwentyPercent.getId()){
+            finalAmount = money * .20;
+            finalAmount = Math.round(finalAmount *100.0) / 100.0;
+            txtViewBottom.setText("$" + finalAmount.toString());
+        }
+
     }
 }
